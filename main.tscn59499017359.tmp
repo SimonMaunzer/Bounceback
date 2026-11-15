@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://1v5yir116nr5"]
+
+[ext_resource type="Script" uid="uid://dm8wwm687kmta" path="res://character_body_2d.gd" id="5_5vw27"]
+[ext_resource type="Texture2D" uid="uid://bwh4bchl1os36" path="res://Grass.jpg" id="5_kek77"]
+[ext_resource type="Texture2D" uid="uid://b7llowfaxj5av" path="res://IMG_1368 (1).png" id="7_5vw27"]
+[ext_resource type="Texture2D" uid="uid://c2hcy4kjrs5go" path="res://IMG_1367 (1).png" id="8_kek77"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_272bh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vrlf"]
+size = Vector2(1159, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kek77"]
+atlas = ExtResource("7_5vw27")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_272bh"]
+atlas = ExtResource("8_kek77")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vw27"]
+atlas = ExtResource("7_5vw27")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1vivr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kek77")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_272bh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vw27")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 8.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8vrlf"]
+radius = 15.0
+
+[node name="Node2D" type="Node2D" unique_id=789004349]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1812315034]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1621515789]
+position = Vector2(578.49994, 325.49997)
+scale = Vector2(1.8140622, 1.0140624)
+
+[node name="Sprite2D2" type="Sprite2D" parent="StaticBody2D" unique_id=544416784]
+position = Vector2(575, 337)
+scale = Vector2(1162.0001, 682)
+texture = SubResource("CanvasTexture_272bh")
+
+[node name="Sprite2D3" type="Sprite2D" parent="StaticBody2D" unique_id=1820158449]
+position = Vector2(579, 331)
+scale = Vector2(1.8156248, 0.99999994)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=117631244]
+position = Vector2(578, 649)
+shape = SubResource("RectangleShape2D_8vrlf")
+
+[node name="Sprite2D5" type="Sprite2D" parent="StaticBody2D" unique_id=1091208831]
+position = Vector2(579.24994, 658.125)
+scale = Vector2(2.2685547, 0.101074256)
+texture = ExtResource("5_kek77")
+
+[node name="Area2D2" type="Area2D" parent="." unique_id=423196248]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Area2D2" unique_id=264435868]
+position = Vector2(80, 531)
+scale = Vector2(2, 1)
+script = ExtResource("5_5vw27")
+
+[node name="Sprite Player" type="AnimatedSprite2D" parent="Area2D2/CharacterBody2D" unique_id=1248445797]
+position = Vector2(-17.5, 86)
+sprite_frames = SubResource("SpriteFrames_1vivr")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2/CharacterBody2D" unique_id=1579411809]
+position = Vector2(-18, 86)
+shape = SubResource("CapsuleShape2D_8vrlf")
