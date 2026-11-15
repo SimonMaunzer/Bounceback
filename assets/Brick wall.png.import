@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7l4n576f2qvr"
-path="res://.godot/imported/stripped_spruce_log.png-413212a6111be10e9818988a63bf4477.ctex"
+uid="uid://bsij56ijthbwt"
+path="res://.godot/imported/Brick wall.png-cbf914e19c8b85cc2313fa3e8f36f763.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://stripped_spruce_log.png"
-dest_files=["res://.godot/imported/stripped_spruce_log.png-413212a6111be10e9818988a63bf4477.ctex"]
+source_file="res://assets/Brick wall.png"
+dest_files=["res://.godot/imported/Brick wall.png-cbf914e19c8b85cc2313fa3e8f36f763.ctex"]
 
 [params]
 

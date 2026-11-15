@@ -1,5 +1,4 @@
 extends CharacterBody2D
-
 @export var speed: float = 200.0
 @export var jump_velocity: float = -400.0
 
@@ -37,3 +36,7 @@ func _physics_process(delta):
 		_sprite.play("run")
 	else:
 		_sprite.play("idle")
+
+
+
+	

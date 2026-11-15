@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://erhbphw0c6s8"
-path="res://.godot/imported/New Sprite.png-7471f6b3215f5f88bd7e116b46c6fb8d.ctex"
+uid="uid://b7l4n576f2qvr"
+path="res://.godot/imported/stripped_spruce_log.png-c7e0ea803a70705a7f5f00c056912e48.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://New Sprite.png"
-dest_files=["res://.godot/imported/New Sprite.png-7471f6b3215f5f88bd7e116b46c6fb8d.ctex"]
+source_file="res://assets/stripped_spruce_log.png"
+dest_files=["res://.godot/imported/stripped_spruce_log.png-c7e0ea803a70705a7f5f00c056912e48.ctex"]
 
 [params]
 

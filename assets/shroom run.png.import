@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7yci1nxprj4u"
-path="res://.godot/imported/—Pngtree—sky landscape pixel style mobile_1487481.png-67887d7106cc84b30d5dd372df350203.ctex"
+uid="uid://cc6sq3g7eovaw"
+path="res://.godot/imported/shroom run.png-621c277abf3e15744d2d38bd1258af21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://—Pngtree—sky landscape pixel style mobile_1487481.png"
-dest_files=["res://.godot/imported/—Pngtree—sky landscape pixel style mobile_1487481.png-67887d7106cc84b30d5dd372df350203.ctex"]
+source_file="res://assets/shroom run.png"
+dest_files=["res://.godot/imported/shroom run.png-621c277abf3e15744d2d38bd1258af21.ctex"]
 
 [params]
 
