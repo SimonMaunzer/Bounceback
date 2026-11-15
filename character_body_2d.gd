@@ -18,10 +18,7 @@ func _physics_process(delta):
 
 	
 
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = jump_velocity
-	if Input.is_action_just_pressed("move_up") and is_on_floor():
-		velocity.y = jump_velocity
+
 
 	var direction = Input.get_axis("move_left", "move_right")
 	velocity.x = direction * speed
@@ -36,7 +33,6 @@ func _physics_process(delta):
 	elif direction > 0:
 		_sprite.flip_h = false
 
-	# Animation
 	if direction != 0:
 		_sprite.play("run")
 	else:
